@@ -1,0 +1,63 @@
+---
+sidebar_position: 2
+---
+
+# KotlinScript Quickstart
+
+KotlinScript is the scripting language that QuestKit makes use of to make quest-making easy, powerful, flexible, and performant. Therefore, a prerequisite to making quests is learning KotlinScript.
+
+KotlinScript is like Kotlin, but does not have to be compiled into a jar like typical plugins. Instead, it is interpreted at runtime. This means that you do not have to restart your server every time you make a change to a script. If you already know Kotlin, KotlinScript should be easy to pick up as they are virtually identical.
+
+This quickstart assumes basic knowledge of programming.
+
+## Variables
+
+Variables are used to store data. You can declare variables using this syntax:
+
+```kotlin
+var/val name: Type = value
+```
+
+`var` is used to declare a variable that can be changed, and `val` is used to declare a variable that cannot be changed. `name` is the name of the variable, `Type` is the type of the variable, and `value` is the value of the variable. For example:
+
+```kotlin
+var x: Int = 5
+val y: String = "Hello"
+```
+
+Note that the type of a variable can be inferred from its value, so you can omit the type if you want:
+
+```kotlin
+var x = 5
+val y = "Hello"
+```
+
+## Functions
+
+Functions are used to group code together. You can declare functions using this syntax:
+
+```kotlin
+fun name(parameter1: Type, parameter2: Type): ReturnType {
+    // Code goes here
+}
+```
+
+`name` is the name of the function, `parameter1` and `parameter2` are the parameters of the function, `Type` is the type of the parameters, and `ReturnType` is the type of the value that the function returns. For example:
+
+```kotlin
+fun add(x: Int, y: Int): Int {
+    return x + y
+}
+
+fun sayHello(name: String): String {
+    return "Hello, $name!"
+}
+```
+
+Note that the return type of a function can be inferred from its value, so you can omit the type if you want:
+
+```kotlin
+fun add(x: Int, y: Int) {
+    return x + y
+}
+```
